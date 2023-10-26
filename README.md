@@ -235,7 +235,7 @@ DB 스트레스 테스트 진행 중 한 기능에 오류를 찾았습니다.
 
 ---
 
-## 기술 스택
+# 기술 스택
 
 <div> 
   <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
@@ -256,21 +256,21 @@ DB 스트레스 테스트 진행 중 한 기능에 오류를 찾았습니다.
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 </div>
 
-## 협업 툴
+# 협업 툴
 
 <div> 
   <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"> 
   <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"> 
 </div>
 
-## 프로젝트 진행 참고 자료
+# 프로젝트 진행 참고 자료
 
 https://www.notion.so/3-9-14-27-45de0c9d12f449d4bd566cbb97753734
 
-## 회의록
+# 회의록
 
 https://www.notion.so/d034fdac023f45ddb5e42a12df867251?v=1588f6e7ec0d4319a17e9ae021878c7f&pvs=4
 
-## 요구사항정의서
+# 요구사항정의서
 
 ❗프로젝트 폴더 안의 `기능 요구서.xlsx` 파일 참고
