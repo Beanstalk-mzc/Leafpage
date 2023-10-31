@@ -1,5 +1,59 @@
+*::-webkit-scrollbar{
+    width: 8px;
+    height: 7px;
+}
+
+/* 스크롤바 막대 설정*/
+*::-webkit-scrollbar-thumb{
+    width: 18%;
+    background-color: rgba(5,99,101,0.8);
+    border-radius: 10px;
+}
+
+/* 스크롤바 뒷 배경 설정*/
+*::-webkit-scrollbar-track {
+    background-color: rgba(196, 228, 212, 0.5);
+    border-radius: 5px;
+}
+
 body {
     background-color: #F9F3F0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.welcome {
+    color:antiquewhite;
+    font-size:15px;
+}
+
+.HTEmail {
+    color:antiquewhite;
+}
+
+.container-fluid{
+    top: 50%;
+    margin-top: -5px;
+    flex-wrap: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center;
+    width: 850px;
+    min-width: 850px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media(max-height: 750px) {
+    .container{
+        margin-top: 10px;
+    }
 }
 
 .index-nav{
@@ -10,6 +64,7 @@ body {
     background-color: #71CB9F;
     border-radius: 5px;
     border-color: transparent;
+    margin-right: 8px;
 }
 
 .btn2 {
@@ -19,13 +74,276 @@ body {
     margin-right: 5px;
 }
 
-
-
 .navbar{
     height: 50px;
+    min-width: 850px;
 }
 
-.container-fluid{
+/* .container-fluid{
     top: 50%;
     margin-top: -5px;
+} */
+
+.search-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 700px;
+    border-radius: 10px;
+    margin: 0 auto;
+    /* margin-top: 50px; */
+}
+
+.search-input{
+    width: 500px;
+    margin-top: 10px;
+    line-height: 22px;
+    margin-bottom: 8px;
+    overflow-x: hidden;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+input{
+    border-color: transparent;
+    text-align: center;
+}
+
+select{
+    border-color: transparent;
+}
+
+.book-option:hover{
+    background-color: #056365;
+    color: white;
+}
+
+select {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.search-lens{
+    width: 40px;
+    height: 40px;
+    margin: 3px 3px;
+    margin-right: 5px;
+}
+
+.title{
+    margin-left: 40px;
+
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #056365;
+    margin-bottom: 30px;
+}
+
+.search-keywords{
+    margin-top: 10px;
+}
+
+.search-keywords > ul > li {
+    transition: text-shadow 0.3s ease-in-out;
+    margin: 0 20px;
+}
+
+.search-keywords > ul > li:hover{
+    cursor: pointer;
+    text-shadow: 5px 2px 4px rgba(78, 78, 78, 0.4);
+}
+
+.book-ul{
+    margin-left: 10px;
+}
+
+.book-box{
+    width: 800px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.book-list{
+    position: relative;
+    background-color: #f1e3dc;
+    width: 125px;
+    height: 210px;
+    margin: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* 초기 그림자 없음 */
+    transition: box-shadow 300ms ease-in-out, transform 300ms ease-in-out;
+
+}
+
+.book-list:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+ul{
+    list-style: none;
+
+}
+
+.book-box > ul{
+    /* list-style: none; */
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    /* position: relative; */
+    /* margin-right: 100px; */
+}
+
+li{
+    display: inline-block;
+}
+
+.book-cover{
+    /* position: absolute; */
+    display: inline-block;
+    margin-top: 10px;
+    /* margin-right: 50px; */
+    width: 108px;
+    height: 150px;
+}
+
+.book-title{
+    width: 110px;
+    margin-top: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 8px;
+}
+
+.book-author{
+    font-size: 12px;
+
+}
+
+@media (max-width: 710px) {
+    .welcome {
+        flex-direction: column;
+        align-items: center;
+    }
+    .HTEmail {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    .UserInline {
+        flex-direction: column;
+        align-items: center;
+    }
+    .HTEmail {
+        font-size: 10px;
+    }
+}
+
+
+
+@media(max-width: 400px){
+    .container-fluid {
+        width: 390px;
+    }
+    .navbar-brand {
+        margin-right: 10px;
+        display: inline-block;
+        height: 70px;
+    }
+    .navbar {
+        min-width: unset;
+        width: 390px;
+        height: 70px;
+    }
+    .leafIMG {
+        margin-top: 10px;
+        width: 25px;
+        height: 28px;
+    }
+    .welcome {
+        font-size:20px;
+    }
+    .HTEmail {
+        font-size: 12px;
+    }
+    .UserInline {
+        width: 220px;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3px;
+    }
+    .inlineLog {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn2 .btn1 {
+        height: 30px;
+        width: 75px;
+        font-size: 12px;
+    }
+    .btn2 {
+        margin-bottom: 5px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    .title {
+        margin-left: 10px;
+    }
+
+    .container {
+        align-items: center;
+        width: 370px;
+        min-width: 300px;
+        text-align: center;
+        margin: 30px 0 0 13px;
+    }
+    .search-bar{
+        width: 300px;
+        /* padding-bottom: 5px; */
+    }
+    .book-select{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .search-input{
+        margin-left: 0px;
+        width: 150px;
+    }
+    .search-lens{
+        margin-left: 0;
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .toggle{
+        margin-left: 240px !important;
+    }
+    .search-keywords > ul > li {
+        margin: 0 3px;
+        padding-left: 0;
+    }
+    .book-box{
+        width: 350px;
+        /* margin: 0px auto; */
+    }
+    .book-list {
+        width: 125px;
+        height: 210px;
+        margin: 3px 7px;
+    }
+    .book-ul{
+        padding-left: 5px;
+    }
 }
